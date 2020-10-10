@@ -1,0 +1,61 @@
+html {
+    font-size: 90%;
+    color: #707070;
+    line-height: 1.5rem;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* util */
+
+/* twit */
+.twit-grid-container {
+    display: grid;
+    grid-template-areas:
+        "twit-user-image twit-user twit-menu"
+        "twit-user-image twit-contents twit-contents"
+        "twit-user-image twit-tag twit-tag"
+        "twit-user-image twit-icons twit-icons";
+}
+.twit-user-image {
+    grid-area: twit-user-image;
+    margin-right: 6px;
+}
+.twit-user {
+    grid-area: twit-user;
+    margin-bottom: 0.5rem;
+}
+.twit-user-name {
+    font-weight: bold;
+}
+.twit-time {
+    margin-left: 0.5rem;
+}
+.twit-menu {
+    grid-area: twit-menu;
+}
+.twit-contents {
+    grid-area: twit-contents;
+    margin-bottom: 1.4rem;
+    max-height: 4rem;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.twit-tag {
+    grid-area: twit-tag;
+    color: #00CB8C;
+    font-weight: bold;
+}
+.twit-tag ul {
+    display: flex;
+    flex-direction: row;
+}
+.twit-tag ul li {
+    list-style: none;
+    margin-right: 0.7rem;
+
+}
+.twit-icons {
+    grid-area: twit-icons;
+}

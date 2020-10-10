@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Anttwit</title>
+    <meta name="description" content="Twit for ants">
+    <meta name="author" content="Anttwit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <a href="menu-login.html">=</a>
+            <form method="GET" action="search">
+                <input type="text" id="keyword" name="keyword">
+            </form>
+            <a href="write.html">#</a>
+        </nav>
+        <main>
+            <nav>
+                <a href="order">최신등록</a>
+                <a href="order">관심종목</a>
+                <a href="order">추천종목</a>
+                <a href="order">팔로우</a>
+            </nav>
+        </main>
+        <section>
+            <article class="twit-grid-container">
+                <div class="twit-user-image">
+                    <img src="images/userImgSample.png" alt="User image">
+                </div>
+                <div class="twit-user">
+                    <span class="twit-user-name">account_name</span>
+                    <span class="twit-time">4시간전</span>
+                </div>
+                <div class="twit-menu">
+                    ...
+                </div>
+                <div class="twit-contents">
+                    물적 분할 논란에 휩싸인 LG화학 주가가 오전 중 5%대 하락 중이다. 21일 오전 10시 36분 기준 LG화학 주가는 전거래일 대비 3만7000원, 내린 62만9000원에 거래되고 있다.
+                </div>
+                <div class="twit-tag">
+                    <ul>
+                        <li>$LG화학</li>
+                        <li>#태그1</li>
+                        <li>#태그2</li>
+                    </ul>
+                </div>
+                <div class="twit-icons">
+                    <button class="article-icon-like btn-off">Like</button>
+                    <button class="article-icon-mail btn-off">Mail</button>
+                    <button class="article-icon-retwit btn-off">Retwit</button>
+                    <button class="article-icon-comment btn-off">Comment</button>
+                    <button class="article-icon-report btn-off">Report</button>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

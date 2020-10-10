@@ -39,9 +39,9 @@ ul {
 .twit-menu button {
     border: 0;
     width: 17px;
-    height: 1rem;
+    height: 15px;
     background: url(../images/btn_dot.svg) no-repeat;
-    background-position-y: 0.5rem;
+    background-position-y: 5px;
 
 }
 .twit-contents {

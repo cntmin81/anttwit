@@ -9,6 +9,10 @@ ul {
 }
 /* util */
 
+.container {
+    margin: 1.4rem;
+}
+
 /* twit */
 .twit-grid-container {
     display: grid;
@@ -17,6 +21,7 @@ ul {
         "twit-user-image twit-contents twit-contents"
         "twit-user-image twit-tag twit-tag"
         "twit-user-image twit-btns twit-btns";
+    margin-bottom: 2rem;
 }
 .twit-user-image {
     grid-area: twit-user-image;

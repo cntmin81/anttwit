@@ -1,0 +1,5 @@
+<svg id="btn_dot_dot" data-name="btn dot dot" xmlns="http://www.w3.org/2000/svg" width="17" height="5" viewBox="0 0 17 5">
+    <circle id="타원_4" data-name="타원 4" cx="2.5" cy="2.5" r="2.5" fill="#e2e2e2"/>
+    <circle id="타원_5" data-name="타원 5" cx="2.5" cy="2.5" r="2.5" transform="translate(6)" fill="#e2e2e2"/>
+    <circle id="타원_6" data-name="타원 6" cx="2.5" cy="2.5" r="2.5" transform="translate(12)" fill="#e2e2e2"/>
+  </svg>

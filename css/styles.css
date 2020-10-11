@@ -7,10 +7,23 @@ ul {
     margin: 0;
     padding: 0;
 }
+a {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+}
 /* util */
 
 .container {
+    display: flex;
+    flex-direction: column;
     margin: 1.4rem;
+}
+
+/* nav-sort */
+.nav-sort {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* twit */
@@ -60,7 +73,6 @@ ul {
     grid-area: twit-tag;
     margin-bottom: 0.8rem;
     color: #00CB8C;
-    font-weight: bold;
 }
 .twit-tag ul {
     display: flex;
@@ -69,7 +81,6 @@ ul {
 .twit-tag ul li {
     list-style: none;
     margin-right: 0.7rem;
-
 }
 .twit-btns {
     grid-area: twit-btns;

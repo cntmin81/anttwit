@@ -3,10 +3,12 @@ html {
     font-size: 90%;
     color: #707070;
     line-height: 1.5rem;
+    height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
 body {
     margin: 0;
     padding: 0;
+    height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
 ul {
     margin: 0;
@@ -32,7 +34,8 @@ button {
 .container {
     display: flex;
     flex-direction: column;
-    margin: 0.7rem;
+    margin: 0 0.7rem;
+    height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
 
 /* global-menu */
@@ -40,7 +43,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1.2rem 0 0 0;
+    margin: 0 0 1rem 0;
     height: 48px;
     border-radius: 22px;
     background-color: #fff;
@@ -73,11 +76,13 @@ button {
 .nav-sort {
     display: flex;
     justify-content: space-between;
-    margin: 0 0.7rem;
+    margin: auto 0.7rem 0.7rem 0.7rem;
 }
 
 /* twit */
 .twits {
+    flex: 1; /* 남음 공간을 꽉차게 */
+    overflow: auto; /* 트윗에 스크롤 주기 */
     margin: 0.7rem 0.7rem 0 0.7rem;
 }
 .twit-grid-container {

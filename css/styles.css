@@ -1,3 +1,4 @@
+/* reset */
 html {
     font-size: 90%;
     color: #707070;
@@ -24,16 +25,14 @@ button {
     margin: 0;
     padding: 0;
 }
+
 /* util */
 
+/* container */
 .container {
     display: flex;
     flex-direction: column;
     margin: 0.7rem;
-}
-
-.twits {
-    margin: 0.7rem 0.7rem 0 0.7rem;
 }
 
 /* global-menu */
@@ -48,7 +47,6 @@ button {
     box-shadow: 1px 3px 3px 1px #ddd;
     padding: 0 0.5rem;
 }
-
 .global-menu {
     border: 0;
     width: 26px;
@@ -79,6 +77,9 @@ button {
 }
 
 /* twit */
+.twits {
+    margin: 0.7rem 0.7rem 0 0.7rem;
+}
 .twit-grid-container {
     display: grid;
     grid-template-areas:

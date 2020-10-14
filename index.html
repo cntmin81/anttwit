@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <section>
+        <section class="twits">
             <article class="twit-grid-container">
                 <div class="twit-user-image">
                     <img src="images/userImgSample.png" alt="User image">
@@ -76,12 +76,12 @@
             <a href="sort">추천종목</a>
             <a href="sort">팔로우</a>
         </nav>
+        <form method="GET" action="search" class="nav-global-menu">
+            <button class="global-menu"></button>
+            <input type="text" id="keyword" name="keyword" class="search">
+            <button class="write"></button>
+        </form>    
     </div>
-    <form method="GET" action="search" class="nav-global-menu">
-        <button class="global-menu"></button>
-        <input type="text" id="keyword" name="keyword" class="search">
-        <button class="write"></button>
-    </form>
     <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -2,12 +2,12 @@
 html {
     font-size: 90%;
     color: #707070;
-    line-height: 1.5rem;
     height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
 body {
     margin: 0;
     padding: 0;
+    line-height: 1;
     height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
 ul {
@@ -32,15 +32,15 @@ button {
 .a-text-button {
     display: block;
     font-weight: normal;
-    margin: 0.7rem 0;
+    margin: 1.4rem 0;
 }
 .block-input {
     display: block;
     border: 0;
     border-bottom: 1px solid #E2E2E2;
     color: inherit;
-    padding: 0.5rem 0 0.5rem 0;
-    margin-bottom: 0.5rem;
+    padding: 0.7rem 0;
+    margin-bottom: 0.7rem;
     width: 100vw;
 }
 .button-primary {
@@ -151,6 +151,7 @@ button {
     max-height: 4rem;
     overflow:hidden;
     text-overflow: ellipsis;
+    line-height: 1.4rem;
 }
 .twit-tag {
     grid-area: twit-tag;
@@ -207,16 +208,44 @@ button {
     overflow: auto; /* 트윗에 스크롤 주기 */
     margin: 0.7rem 1.4rem 0 1.4rem;
 }
-.account h1 {
+.account h1,
+.account-user-info h1 {
     font-size: 0.5rem;
     color: #1d1d1d;
+}
+
+/* account-user-info */
+.account-user-info {
+    margin: 0.7rem 1.4rem 0 1.4rem;
+}
+.user-info {
+    display: grid;
+    grid-template-areas:
+        "user-info-pic user-info-name user-info-name"
+        "user-info-pic user-info-account user-info-account"
+        "user-info-pic user-info-follow user-info-follower";
+    grid-template-columns: 100px 1fr 1fr;
+}
+.user-info-pic {
+    grid-area: user-info-pic;
+}
+.user-info-name {
+    grid-area: user-info-name;
+}
+.user-info-account {
+    grid-area: user-info-account;
+}
+.user-info-follow {
+    grid-area: user-info-follow;
+}
+.user-info-follower {
+    grid-area: user-info-follower;
 }
 
 /* nav-top */
 .nav-top {
     padding: 1rem ;
     border-bottom: 1px solid #E2E2E2;
-    line-height: 0;
 }
 button.back {
     border: 0;

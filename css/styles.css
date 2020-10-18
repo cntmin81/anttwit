@@ -58,6 +58,20 @@ button {
     font-weight: bold;
     margin: 0.7rem 0;
 }
+.button-secondary {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #00B8BF;
+    border-radius: 20px;
+    background: #fff;
+    color: #00B8BF;
+    font-weight: bold;
+    margin: 0.7rem 0;
+}
+.note {
+    color: #a2a2a2;
+    font-size: 0.5rem;
+}
 
 /* container */
 .container {
@@ -214,7 +228,8 @@ button {
     margin: 0.7rem 1.4rem 0 1.4rem;
 }
 .account h1,
-.account-user-info h1 {
+.account-user-info h1,
+.join h1 {
     font-size: 0.5rem;
     color: #1d1d1d;
 }
@@ -222,6 +237,9 @@ button {
 /* account-user-info */
 .account-user-info {
     margin: 0.7rem 1.4rem 0 1.4rem;
+}
+.join {
+    margin: 0.7rem 1.4rem 1.4rem 1.4rem;
 }
 .user-info {
     display: grid;

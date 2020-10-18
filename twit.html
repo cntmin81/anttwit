@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Anttwit</title>
+    <meta name="description" content="Twit for ants">
+    <meta name="author" content="Anttwit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-top">
+            <button class="back"></button>
+        </div>
+        <section class="stock-info">
+            <h1>종목이름</h1>
+            <div class="stock-twit-count">1,233 트윗</div>
+            <div class="stock-price">196,900</div>
+            <div class="stock-diff">8,000</div> 
+            <div class="stock-diff-percent">+29.84%</div>
+            <div class="stock-graph">
+                <div class="stock-graph-sell">33.3%</div>
+                <div class="stock-graph-neutral">33.3%</div>
+                <div class="stock-graph-buy">33.3%</div>
+            </div>
+            <a href="#" class="a-text-button">종목정보 자세히 보기</a>
+        </section>
+        <section class="twits">
+            <article class="twit-grid-container">
+                <div class="twit-user-image">
+                    <img src="images/user_img_sample.png" alt="User image">
+                </div>
+                <div class="twit-user">
+                    <span class="twit-user-name">account_name</span>
+                    <span class="twit-time">4시간전</span>
+                </div>
+                <div class="twit-menu">
+                    <button></button>
+                </div>
+                <div class="twit-contents">
+                    물적 분할 논란에 휩싸인 LG화학 주가가 오전 중 5%대 하락 중이다. 21일 오전 10시 36분 기준 LG화학 주가는 전거래일 대비 3만7000원, 내린 62만9000원에 거래되고 있다.
+                </div>
+                <div class="twit-tag">
+                    <ul>
+                        <li>$LG화학</li>
+                        <li>#태그1</li>
+                        <li>#태그2</li>
+                    </ul>
+                </div>
+                <div class="twit-btns">
+                    <button class="twit-btn-like btn-off"></button>
+                    <button class="twit-btn-mail btn-off"></button>
+                    <button class="twit-btn-retwit btn-off"></button>
+                    <button class="twit-btn-comment btn-off"></button>
+                    <button class="twit-btn-report btn-off"></button>
+                </div>
+            </article>
+        </section>
+        <section class="no-result">
+            더 이상 검색 결과가 없습니다.
+        </section>        
+        <form method="GET" action="search" class="nav-global-menu">
+            <button class="global-menu"></button>
+            <input type="text" id="keyword" name="keyword" class="search">
+            <button class="write"></button>
+        </form>    
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

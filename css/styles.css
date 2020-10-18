@@ -46,7 +46,7 @@ button {
     color: inherit;
     padding: 0.7rem 0;
     margin-bottom: 0.7rem;
-    width: 100vw;
+    width: 100%;
 }
 .button-primary {
     width: 100%;

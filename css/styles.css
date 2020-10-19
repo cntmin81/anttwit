@@ -1,6 +1,6 @@
 /* reset */
 html {
-    font-size: 90%;
+    font-size: 85%;
     color: #707070;
     height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
@@ -143,10 +143,10 @@ button {
         "twit-user-image twit-tag twit-tag"
         "twit-user-image twit-btns twit-btns";
     margin-bottom: 2rem;
+    grid-template-columns: 52px auto auto;
 }
 .twit-user-image {
     grid-area: twit-user-image;
-    margin-right: 6px;
 }
 .twit-user {
     grid-area: twit-user;
@@ -168,15 +168,15 @@ button {
     height: 15px;
     background: url(../images/btn_dot.svg) no-repeat;
     background-position-y: 5px;
-
 }
 .twit-contents {
     grid-area: twit-contents;
     margin-bottom: 1.4rem;
-    max-height: 4rem;
-    overflow:hidden;
-    text-overflow: ellipsis;
-    line-height: 1.4rem;
+    line-height: 1.4em;
+    font-size: 0.9rem;
+}
+.twit-contents.large {
+    font-size: 1.15rem;
 }
 .twit-tag {
     grid-area: twit-tag;
@@ -296,7 +296,7 @@ button {
     'stock-price stock-price stock-diff stock-diff-percent'
     'stock-graph stock-graph stock-graph stock-graph'
     'stock-detail stock-detail stock-detail stock-detail';
-    margin: 0.7rem 1.4rem 1.4rem 1.4rem;
+    margin: 0.7rem 1.4rem 0 1.4rem;
 }
 .stock-info .up {
     color: #D51A45;
@@ -321,6 +321,7 @@ button {
 .stock-diff {
     grid-area: stock-diff;
     align-self: center;
+    justify-self: end;
 }
 .stock-diff .up {
     background: url(../images/icon_up.svg) no-repeat 0 3px;
@@ -329,9 +330,31 @@ button {
 .stock-diff-percent {
     grid-area: stock-diff-percent;
     align-self: center;
+    justify-self: end;
 }
 .stock-graph {
     grid-area: stock-graph;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 0.7rem;
+}
+.stock-graph>div {
+    border: 0;
+    padding: 7px 0 6px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: lighter;
+}
+.stock-graph>.sell {
+    background: #D51A45;
+    border-radius: 35px 0 0 35px;
+}
+.stock-graph .neutral {
+    background: #00CB8C;
+}
+.stock-graph .buy {
+    background: #179CEF;
+    border-radius: 0 35px 35px 0;
 }
 .stock-detail {
     grid-area: stock-detail;

@@ -293,13 +293,17 @@ button {
     display: grid;
     grid-template-areas: 
     'stock-name stock-name stock-name stock-name'
-    'stock-price stock-price stock-diff stock-diff-percent'
+    'stock-price stock-price stock-diff stock-diff'
     'stock-graph stock-graph stock-graph stock-graph'
     'stock-detail stock-detail stock-detail stock-detail';
     margin: 0.7rem 1.4rem 0 1.4rem;
 }
 .stock-info .up {
     color: #D51A45;
+}
+.stock-info .up-icon {
+    background: url(../images/icon_up.svg) no-repeat;
+    padding-left: 18px;
 }
 .stock-name {
     grid-area: stock-name;
@@ -323,14 +327,11 @@ button {
     align-self: center;
     justify-self: end;
 }
-.stock-diff .up {
-    background: url(../images/icon_up.svg) no-repeat 0 3px;
-    padding-left: 18px;
+.stock-diff span {
+    display: inline-block;
 }
-.stock-diff-percent {
-    grid-area: stock-diff-percent;
-    align-self: center;
-    justify-self: end;
+.stock-diff span:first-child {
+    margin-right: 0.7rem;
 }
 .stock-graph {
     grid-area: stock-graph;

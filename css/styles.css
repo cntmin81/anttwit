@@ -295,7 +295,7 @@ button {
     'stock-name stock-name stock-name stock-name'
     'stock-price stock-price stock-diff stock-diff'
     'stock-graph stock-graph stock-graph stock-graph'
-    'stock-detail stock-detail stock-detail stock-detail';
+    'stock-detail-link stock-detail-link stock-detail-link stock-detail-link';
     margin: 0.7rem 1.4rem 0 1.4rem;
 }
 .stock-info .up {
@@ -321,6 +321,7 @@ button {
     grid-area: stock-price;
     font-size: 2rem;
     font-weight: lighter;
+    color: #1d1d1d;
 }
 .stock-diff {
     grid-area: stock-diff;
@@ -357,9 +358,48 @@ button {
     background: #179CEF;
     border-radius: 0 35px 35px 0;
 }
-.stock-detail {
-    grid-area: stock-detail;
+.stock-detail-link {
+    grid-area: stock-detail-link;
+    text-align: center;
 }
+.stock-detail {
+    margin: 0.7rem 1.4rem 0 1.4rem;
+    border: #eee 1px solid;
+    flex: 1;
+}
+.stock-detail-list {
+    display: flex;
+    margin: 0 -1px -1px 0;
+    overflow: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.stock-detail-list li {
+    flex-basis: 50%;
+    justify-content: space-between;
+    border-right: 1px #eee solid;
+    border-bottom: 1px #eee solid;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+}
+.stock-detail-list li div {
+    color: #a2a2a2;
+}
+.stock-detail-list li div em {
+    display: block;
+    font-size: 0.75rem;
+    font-style: normal;
+}
+.stock-detail-list li span {
+    color: #1d1d1d;
+}
+
+
 
 /* nav-top */
 .nav-top {

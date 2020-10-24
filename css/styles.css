@@ -27,10 +27,20 @@ a {
 input {
     margin: 0;
     padding: 0;
+    font-size: inherit;
+    
 }
 button {
     margin: 0;
     padding: 0;
+    font-size: inherit;
+}
+textarea {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    resize: none;
+    color: #1d1d1d;
 }
 
 /* util */
@@ -399,6 +409,82 @@ button {
     color: #1d1d1d;
 }
 
+
+.user-info-writing {
+    display: flex;
+    margin: 0.7rem 1.4rem 0 1.4rem;
+}
+.user-info-writing-img {
+    flex-basis: 55px;
+}
+.user-info-writing-name {
+    align-self: center;
+}
+.user-info-writing-name span {
+    display: block;
+    font-size: 0.85rem;
+    color: #a2a2a2;
+    margin-top: 0.2rem;
+}
+
+.writing {
+    margin: 0.7rem 1.4rem 0 1.4rem;
+}
+
+.writing textarea {
+    width: 100%;
+    height: 30vh;
+    line-height: 1.7rem;
+    margin-bottom: 1.4rem;
+}
+
+.writing-bottom {
+    display: flex;
+}
+.writing-bottom input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    color: #00CB8C;
+    border: 0;
+}
+.button-upload {
+    border: 0;
+    width: 20px;
+    height: 26px;
+    background: url(../images/btn_upload.svg) no-repeat;
+}
+.writing-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.writing-buttons button {
+    width: 30%;
+    height: 38px;
+    border-radius: 20px;
+    background: #fff;
+    font-weight: bold;
+}
+
+.writing-buttons button.sell {
+    border: #179CEF 1px solid;
+    color: #179CEF;
+}
+.writing-buttons button.neutral {
+    border: #00CB8C 1px solid;
+    color: #00CB8C;
+}
+.writing-buttons button.buy {
+    border: #D51A45 1px solid;
+    color: #D51A45;
+}
+.buttons-em {
+    display: block;
+    width: 100%;
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+    color: #a2a2a2;
+}
 
 
 /* nav-top */

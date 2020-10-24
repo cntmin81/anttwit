@@ -430,6 +430,8 @@ textarea {
 .writing {
     margin: 0.7rem 1.4rem 0 1.4rem;
 }
+.writing form {
+}
 
 .writing textarea {
     width: 100%;
@@ -464,6 +466,7 @@ textarea {
     border-radius: 20px;
     background: #fff;
     font-weight: bold;
+    margin-top: 1.4rem;
 }
 
 .writing-buttons button.sell {

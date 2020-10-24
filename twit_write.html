@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Anttwit</title>
+    <meta name="description" content="Twit for ants">
+    <meta name="author" content="Anttwit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-top">
+            <button class="back"></button>
+        </div>
+        <section class="user-info-writing">
+            <div class="user-info-writing-img">
+                <img src="images/user_img_sample.png">
+            </div>
+            <div class="user-info-writing-name">
+                사용자닉네임
+                <span>@account_name</span>
+            </div>
+        </section>
+        <section class="writing">
+            <form>
+                <textarea></textarea>
+                <input type="text">
+                <button>upload</button>
+                <div>
+                    <button>사자</button>
+                    <button>관망</button>
+                    <button>팔자</button>
+                </div>
+                <span>선택한 의견으로 트윗을 작성합니다</span>
+            </form>
+        </section>
+        <form method="GET" action="search" class="nav-global-menu">
+            <button class="global-menu"></button>
+            <input type="text" id="keyword" name="keyword" class="search">
+            <button class="write"></button>
+        </form>    
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

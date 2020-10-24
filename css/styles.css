@@ -1,6 +1,5 @@
 /* reset */
 html {
-    font-size: 85%;
     color: #707070;
     height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
@@ -88,55 +87,58 @@ textarea {
     text-align: center;
     color: #A2A2A2;
 }
-
-/* container */
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
+.floating-menu {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
 }
 
 /* global-menu */
-.nav-global-menu {
+.menu-global {
     display: flex;
+    box-sizing: border-box;
     justify-content: space-around;
     align-items: center;
-    margin: auto 0.7rem 1rem 0.7rem;
+    margin: 0 0.7rem 1rem 0.7rem;
     height: 48px;
-    border-radius: 22px;
+    border-radius: 40px;
     background-color: #fff;
     box-shadow: 1px 3px 3px 1px #ddd;
-    padding: 0 0.5rem;
+    padding: 0 0.7rem;
 }
-.global-menu {
+.btn-show-menu {
     border: 0;
-    width: 26px;
     height: 22px;
-    margin-left: 6px;
     background: url(../images/btn_global_menu.svg) no-repeat;
+    flex-basis: 26px;
+    margin-right: 10px;
+    margin-left: 6px;
 }
 .search {
     border: 1px solid #00EFA5;
     border-radius: 15px;
     height: 30px;
+    box-sizing: border-box;
+    flex-grow: 1;
     padding: 0 1rem;
-    flex: 1;
-    margin: 0 10px;
+    color: #a2a2a2;
 }
 .write {
     border: 0;
-    width: 30px;
     height: 30px;
     background: url(../images/btn_write.svg) no-repeat;
+    flex-basis: 30px;
+    margin-left: 10px;
 }
 
-/* nav-sort */
-.nav-sort {
+/* menu-sort */
+.menu-sort {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto 1.4rem 0.7rem 1.4rem;
-    padding-top: 0.7rem;
+    padding-top: 1.2rem;
+    font-size: 0.9rem;
 }
 
 /* twit */

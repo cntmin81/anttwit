@@ -1,14 +1,11 @@
 /* reset */
 html {
-    font-size: 85%;
     color: #707070;
-    height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
 body {
     margin: 0;
     padding: 0;
     line-height: 1;
-    height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
 ul {
     margin: 0;
@@ -42,19 +39,24 @@ textarea {
     resize: none;
     color: #1d1d1d;
 }
+em {
+    font-style: normal;
+}
 
 /* util */
 .a-text-button {
     display: block;
-    font-weight: normal;
     margin: 1.4rem 0;
+    font-size: 0.9rem;
+    font-weight: normal;
 }
 .block-input {
     display: block;
+    box-sizing: border-box;
     border: 0;
     border-bottom: 1px solid #E2E2E2;
     color: inherit;
-    padding: 0.7rem 0;
+    padding: 0.7rem 0 0.7rem 0.3rem;
     margin-bottom: 0.7rem;
     width: 100%;
 }
@@ -80,129 +82,152 @@ textarea {
 }
 .note {
     color: #a2a2a2;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 .no-result {
-    flex: 1;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     text-align: center;
     color: #A2A2A2;
 }
-
-/* container */
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
+.floating-menu {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+}
+.blank-top {
+    margin-top: 60px !important;
 }
 
 /* global-menu */
-.nav-global-menu {
+.menu-global {
     display: flex;
+    box-sizing: border-box;
     justify-content: space-around;
     align-items: center;
-    margin: auto 0.7rem 1rem 0.7rem;
+    margin: 0 0.7rem 1rem 0.7rem;
     height: 48px;
-    border-radius: 22px;
+    border-radius: 40px;
     background-color: #fff;
     box-shadow: 1px 3px 3px 1px #ddd;
-    padding: 0 0.5rem;
+    padding: 0 0.7rem;
 }
-.global-menu {
+.btn-show-menu {
     border: 0;
-    width: 26px;
     height: 22px;
-    margin-left: 6px;
     background: url(../images/btn_global_menu.svg) no-repeat;
+    flex-basis: 26px;
+    margin-right: 10px;
+    margin-left: 6px;
 }
 .search {
     border: 1px solid #00EFA5;
     border-radius: 15px;
     height: 30px;
+    box-sizing: border-box;
+    flex-grow: 1;
     padding: 0 1rem;
-    flex: 1;
-    margin: 0 10px;
+    color: #a2a2a2;
 }
 .write {
     border: 0;
-    width: 30px;
     height: 30px;
     background: url(../images/btn_write.svg) no-repeat;
+    flex-basis: 30px;
+    margin-left: 10px;
+}
+.font-large {
+    font-size: 1.2rem;
 }
 
-/* nav-sort */
-.nav-sort {
+/* nav-top */
+.nav-top {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    border-bottom: 1px solid #E2E2E2;
+    width: 100vw;
+    background: #fff;
+}
+
+button.back {
+    border: 0;
+    width: 18px;
+    height: 18px;
+    background: url(../images/btn_back.svg) no-repeat;
+    margin-left: 0.3rem;
+}
+
+
+/* menu-sort */
+.menu-sort {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto 1.4rem 0.7rem 1.4rem;
-    padding-top: 0.7rem;
+    padding-top: 1.2rem;
+    font-size: 0.9rem;
 }
 
 /* twit */
 .twits {
-    flex: 1; /* 남음 공간을 꽉차게 */
-    overflow: auto; /* 트윗에 스크롤 주기 */
-    margin: 0.7rem 1.4rem 0 1.4rem;
+    margin: 1.4rem 1.4rem 0 1.4rem;
 }
-.twit-grid-container {
-    display: grid;
-    grid-template-areas:
-        "twit-user-image twit-user twit-menu"
-        "twit-user-image twit-contents twit-contents"
-        "twit-user-image twit-tag twit-tag"
-        "twit-user-image twit-btns twit-btns";
-    margin-bottom: 2rem;
-    grid-template-columns: 52px auto auto;
+.twit {
+    display: flex;
+    margin-bottom: 2.1rem;
 }
 .twit-user-image {
-    grid-area: twit-user-image;
+    flex-basis: 45px;
+    margin-right: 10px;
 }
-.twit-user {
-    grid-area: twit-user;
-    margin-bottom: 0.5rem;
+.twit-contents {
+    flex-grow: 1;
+}
+.twit-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
 }
 .twit-user-name {
     font-weight: bold;
 }
+.twit-user-account-name {
+    display: inline-block;
+    margin-left: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: #a2a2a2;
+}
 .twit-time {
-    margin-left: 0.5rem;
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 0.7rem;
+    font-size: 0.8rem;
+    color: #a2a2a2;
 }
-.twit-menu {
-    grid-area: twit-menu;
-    justify-self: end;
-}
-.twit-menu button {
+.twit-menu-button {
     border: 0;
-    width: 17px;
+    /* width: 17px; */
+    flex-basis: 17px;
     height: 15px;
     background: url(../images/btn_dot.svg) no-repeat;
     background-position-y: 5px;
 }
-.twit-contents {
-    grid-area: twit-contents;
-    margin-bottom: 1.4rem;
+.twit-article {
+    margin-bottom: 0.3rem;
     line-height: 1.4em;
-    font-size: 0.9rem;
-}
-.twit-contents.large {
-    font-size: 1.15rem;
 }
 .twit-tag {
-    grid-area: twit-tag;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.7rem;
     color: #00CB8C;
 }
 .twit-tag ul {
     display: flex;
-    flex-direction: row;
 }
 .twit-tag ul li {
-    list-style: none;
     margin-right: 0.7rem;
 }
 .twit-btns {
-    grid-area: twit-btns;
     display: flex;
     justify-content: space-between;
 }
@@ -239,63 +264,48 @@ textarea {
 
 /* account */
 .account {
-    flex: 1; /* 남음 공간을 꽉차게 */
-    overflow: auto; /* 트윗에 스크롤 주기 */
-    margin: 0.7rem 1.4rem 0 1.4rem;
+    margin: 0 1.4rem;
 }
-.account h1,
-.account-user-info h1,
-.join h1 {
-    font-size: 0.5rem;
+.account h1{
+    margin: 2rem 0 0.3rem 0;
+    font-size: 0.7rem;
     color: #1d1d1d;
 }
 
-/* account-user-info */
-.account-user-info {
-    margin: 0.7rem 1.4rem 0 1.4rem;
-}
+
 .join {
     margin: 0.7rem 1.4rem 1.4rem 1.4rem;
 }
-.user-info {
-    display: grid;
-    grid-template-areas:
-        "user-info-pic user-info-name user-info-name"
-        "user-info-pic user-info-account user-info-account"
-        "user-info-pic user-info-follow user-info-follower";
-    grid-template-columns: 100px 1fr 1fr;
-    grid-template-rows: 40px 20px auto;
-    column-gap: 1rem;
+.account-user-info {
+    display: flex;
+    align-items: center;
 }
-.user-info-pic {
-    grid-area: user-info-pic;
+.account-user-info-image {
+    margin-right: 10px;
 }
-.user-info-name {
-    grid-area: user-info-name;
-    align-self: end;
+.account-user-info-name {
     font-weight: bold;
 }
-.user-info-account {
-    grid-area: user-info-account;
-    align-self: start;
-    font-size: 0.85rem;
-    margin-top: 0.2rem;
+.account-user-info-account {
+    font-size: 0.8rem;
+    margin: 0.3rem 0 0.7rem 0;
 }
-.user-info-follow {
-    grid-area: user-info-follow;
-    margin-top: 0.2rem;
+.account-user-info-follow span {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 0.9rem;
 }
-.user-info-follower {
-    grid-area: user-info-follower;
-    margin-top: 0.2rem;
+.account-user-info-follow span em {
+    font-weight: bold;
 }
+
 
 /* account-menu */
 .account-menu {
     margin: 0 0.7rem;
 }
 .account-menu li {
-    margin: 2.1rem 0 0 1.4rem;
+    margin: 2.1rem 0 0 0;
 }
 
 /* stock-info */
@@ -490,14 +500,4 @@ textarea {
 }
 
 
-/* nav-top */
-.nav-top {
-    padding: 1rem ;
-    border-bottom: 1px solid #E2E2E2;
-}
-button.back {
-    border: 0;
-    width: 22px;
-    height: 22px;
-    background: url(../images/btn_back.svg) no-repeat;
-}
+

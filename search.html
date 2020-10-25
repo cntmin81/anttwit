@@ -9,23 +9,21 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 <body>
-    <div class="container">
-        <div class="nav-top">
-            <button class="back"></button>
-        </div>
-        <section class="twits">
-            <article class="twit-grid-container">
-                <div class="twit-user-image">
-                    <img src="images/user_img_sample.png" alt="User image">
-                </div>
-                <div class="twit-user">
-                    <span class="twit-user-name">account_name</span>
+    <div class="nav-top">
+        <button class="back"></button>
+    </div>
+    <section class="twits blank-top">
+        <article class="twit">
+            <div class="twit-user-image">
+                <img src="images/user_img_sample.png" alt="User image">
+            </div>
+            <div class="twit-contents">
+                <div class="twit-title">
+                    <span class="twit-user-name">사용자이름<span class="twit-user-account-name">@account_name</span></span>
                     <span class="twit-time">4시간전</span>
+                    <button class="twit-menu-button"></button>
                 </div>
-                <div class="twit-menu">
-                    <button></button>
-                </div>
-                <div class="twit-contents">
+                <div class="twit-article">
                     물적 분할 논란에 휩싸인 LG화학 주가가 오전 중 5%대 하락 중이다. 21일 오전 10시 36분 기준 LG화학 주가는 전거래일 대비 3만7000원, 내린 62만9000원에 거래되고 있다.
                 </div>
                 <div class="twit-tag">
@@ -41,15 +39,23 @@
                     <button class="twit-btn-retwit btn-off"></button>
                     <button class="twit-btn-comment btn-off"></button>
                     <button class="twit-btn-report btn-off"></button>
-                </div>
-            </article>
-        </section>
-        <section class="no-result">
-            더 이상 검색 결과가 없습니다.
-        </section>        
-        <form method="GET" action="search" class="nav-global-menu">
-            <button class="global-menu"></button>
-            <input type="text" id="keyword" name="keyword" class="search">
+                </div>    
+            </div>
+        </article>
+        <div class="no-result">
+            더 이상 검색 결과가 없습니다
+        </div>
+    </section>
+    <div class="floating-menu">        
+        <nav class="menu-sort">
+            <a href="sort">최신등록</a>
+            <a href="sort">관심종목</a>
+            <a href="sort">추천종목</a>
+            <a href="sort">팔로우</a>
+        </nav>
+        <form method="GET" action="search" class="menu-global">
+            <button class="btn-show-menu"></button>
+            <input type="text" id="keyword" name="keyword" class="search" value="검색어 입력">
             <button class="write"></button>
         </form>    
     </div>

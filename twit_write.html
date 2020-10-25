@@ -9,37 +9,43 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 <body>
-    <div class="container">
-        <div class="nav-top">
-            <button class="back"></button>
+    <div class="nav-top">
+        <button class="back"></button>
+    </div>
+    <section class="user-info-writing blank-top">
+        <div class="user-info-writing-img">
+            <img src="images/user_img_sample.png">
         </div>
-        <section class="user-info-writing">
-            <div class="user-info-writing-img">
-                <img src="images/user_img_sample.png">
+        <div class="user-info-writing-name">
+            사용자닉네임
+            <span>@account_name</span>
+        </div>
+    </section>
+    <section class="writing">
+        <form>
+            <textarea>트윗 내용을 입력해주세요</textarea>
+            <div class="writing-bottom">
+                <input type="text" value="$종목입력 #태그입력">
+                <button class="button-upload"></button>
             </div>
-            <div class="user-info-writing-name">
-                사용자닉네임
-                <span>@account_name</span>
+            <div class="writing-buttons">
+                <button class="sell">팔자</button>
+                <button class="neutral">관망</button>
+                <button class="buy">사자</button>
             </div>
-        </section>
-        <section class="writing">
-            <form>
-                <textarea>트윗 내용을 입력해주세요</textarea>
-                <div class="writing-bottom">
-                    <input type="text" value="$종목입력 #태그입력">
-                    <button class="button-upload"></button>
-                </div>
-                <div class="writing-buttons">
-                    <button class="sell">팔자</button>
-                    <button class="neutral">관망</button>
-                    <button class="buy">사자</button>
-                </div>
-                <span class="buttons-em">선택한 의견으로 트윗을 작성합니다</span>
-            </form>
-        </section>
-        <form method="GET" action="search" class="nav-global-menu">
-            <button class="global-menu"></button>
-            <input type="text" id="keyword" name="keyword" class="search">
+            <span class="buttons-em">선택한 의견으로 트윗을 작성합니다</span>
+        </form>
+    </section>  
+    <div class="floating-menu">        
+        <nav class="menu-sort">
+            <a href="sort">최신등록</a>
+            <a href="sort">관심종목</a>
+            <a href="sort">추천종목</a>
+            <a href="sort">팔로우</a>
+        </nav>
+        <form method="GET" action="search" class="menu-global">
+            <button class="btn-show-menu"></button>
+            <input type="text" id="keyword" name="keyword" class="search" value="검색어 입력">
             <button class="write"></button>
         </form>    
     </div>

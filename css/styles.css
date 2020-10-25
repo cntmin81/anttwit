@@ -82,11 +82,10 @@ em {
 }
 .note {
     color: #a2a2a2;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 .no-result {
-    flex: 1;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     text-align: center;
     color: #A2A2A2;
 }
@@ -267,8 +266,8 @@ button.back {
 .account {
     margin: 0 1.4rem;
 }
-.account h1,
-.join h1 {
+.account h1{
+    margin: 2rem 0 0.3rem 0;
     font-size: 0.7rem;
     color: #1d1d1d;
 }

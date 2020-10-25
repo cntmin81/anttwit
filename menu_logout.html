@@ -10,17 +10,17 @@
 </head>
 <body>
     <div class="nav-top">
-        <button class="back"></button>
+        <button class="back" onclick="window.history.back();"></button>
     </div>
     <section class="account blank-top">
         <h1>로그인</h1>
         <form>
             <input type="text" name="id" id="id" class="block-input" value="아이디">
             <input type="text" name="id" id="id" class="block-input" value="비밀번호">
-            <button class="button-primary">로그인</button>
+            <button class="button-primary" onclick="location.href='menu_login.html'; return false;">로그인</button>
         </form>
         <a href="#" class="a-text-button">비밀번호가 기억나지 않습니다</a>
-        <a href="#" class="a-text-button">Anttwits에 가입하기</a>
+        <a href="join.html" class="a-text-button">Anttwits에 가입하기</a>
     </section>
     <script src="js/scripts.js"></script>
 </body>

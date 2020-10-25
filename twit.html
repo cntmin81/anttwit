@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="nav-top">
-        <button class="back"></button>
+        <button class="back" onclick="window.history.back();"></button>
     </div>
     <section class="stock-info blank-top">
         <h1 class="stock-name">종목이름<span class="stock-twit-count">1,233 트윗</span></h1>
@@ -93,11 +93,11 @@
             <a href="sort">추천종목</a>
             <a href="sort">팔로우</a>
         </nav>
-        <form method="GET" action="search" class="menu-global">
-            <button class="btn-show-menu"></button>
-            <input type="text" id="keyword" name="keyword" class="search" value="검색어 입력">
-            <button class="write"></button>
-        </form>    
+        <form method="GET" class="menu-global">
+            <button class="btn-show-menu" onclick="location.href='menu_logout.html'; return false;"></button>
+            <input type="text" id="keyword" name="keyword" class="search" value="검색어 입력" onclick="location.href='search.html'">
+            <button class="write" onclick="location.href='twit_write.html'; return false;"></button>
+        </form>
     </div>
     <script src="js/scripts.js"></script>
 </body>

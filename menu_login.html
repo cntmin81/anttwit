@@ -9,36 +9,31 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 <body>
-    <div class="container">
-        <div class="nav-top">
-            <button class="back"></button>
-        </div>
-        <section class="account-user-info">
-            <h1>계정정보</h1>
-            <div class="user-info">
-                <div class="user-info-pic">
-                    <img src="images/user_img_large_sample.png">
-                </div>
-                <span class="user-info-name">사용자이름</span>
-                <span class="user-info-account">@account_name</span>
-                <span class="user-info-follow">100 팔로우</span>
-                <span class="user-info-follower">100 팔로워</span>
-            </div>
-        </section>
-        <section class="account-menu">
-            <ul>
-                <li><a href="#">내 트윗</a></li>
-                <li><a href="#">관심종목</a></li>
-                <li><a href="#">팔로우</a></li>
-                <li><a href="#">팔로워</a></li>
-            </ul>
-        </section>
-        <form method="GET" action="search" class="nav-global-menu">
-            <button class="global-menu"></button>
-            <input type="text" id="keyword" name="keyword" class="search">
-            <button class="write"></button>
-        </form>    
+    <div class="nav-top">
+        <button class="back"></button>
     </div>
+    <section class="account blank-top">
+        <h1>계정정보</h1>
+        <div class="account-user-info">
+            <div class="account-user-info-image">
+                <img src="images/user_img_large_sample.png">
+            </div>
+            <div>
+                <div class="account-user-info-name">사용자이름</div>
+                <div class="account-user-info-account">@account_name</div>
+                <div class="account-user-info-follow">
+                    <span><em>100</em> 팔로우</span>
+                    <span><em>100</em> 팔로워</span>
+                </div>
+            </div>
+        </div>
+        <ul class="account-menu">
+            <li><a href="#">내 트윗</a></li>
+            <li><a href="#">관심종목</a></li>
+            <li><a href="#">팔로우</a></li>
+            <li><a href="#">팔로워</a></li>
+        </ul>
+    </section>
     <script src="js/scripts.js"></script>
 </body>
 </html>

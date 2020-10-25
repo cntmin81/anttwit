@@ -1,13 +1,11 @@
 /* reset */
 html {
     color: #707070;
-    height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
 body {
     margin: 0;
     padding: 0;
     line-height: 1;
-    height: 100%; /* 세로크기를 전체 화면으로. global-menu를 화면 바닥에 붙이기 위해. */
 }
 ul {
     margin: 0;
@@ -41,19 +39,24 @@ textarea {
     resize: none;
     color: #1d1d1d;
 }
+em {
+    font-style: normal;
+}
 
 /* util */
 .a-text-button {
     display: block;
-    font-weight: normal;
     margin: 1.4rem 0;
+    font-size: 0.9rem;
+    font-weight: normal;
 }
 .block-input {
     display: block;
+    box-sizing: border-box;
     border: 0;
     border-bottom: 1px solid #E2E2E2;
     color: inherit;
-    padding: 0.7rem 0;
+    padding: 0.7rem 0 0.7rem 0.3rem;
     margin-bottom: 0.7rem;
     width: 100%;
 }
@@ -92,6 +95,9 @@ textarea {
     bottom: 0;
     background: #fff;
     width: 100%;
+}
+.blank-top {
+    margin-top: 60px !important;
 }
 
 /* global-menu */
@@ -134,6 +140,25 @@ textarea {
 .font-large {
     font-size: 1.2rem;
 }
+
+/* nav-top */
+.nav-top {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    border-bottom: 1px solid #E2E2E2;
+    width: 100vw;
+    background: #fff;
+}
+
+button.back {
+    border: 0;
+    width: 18px;
+    height: 18px;
+    background: url(../images/btn_back.svg) no-repeat;
+    margin-left: 0.3rem;
+}
+
 
 /* menu-sort */
 .menu-sort {
@@ -240,63 +265,48 @@ textarea {
 
 /* account */
 .account {
-    flex: 1; /* 남음 공간을 꽉차게 */
-    overflow: auto; /* 트윗에 스크롤 주기 */
-    margin: 0.7rem 1.4rem 0 1.4rem;
+    margin: 0 1.4rem;
 }
 .account h1,
-.account-user-info h1,
 .join h1 {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: #1d1d1d;
 }
 
-/* account-user-info */
-.account-user-info {
-    margin: 0.7rem 1.4rem 0 1.4rem;
-}
+
 .join {
     margin: 0.7rem 1.4rem 1.4rem 1.4rem;
 }
-.user-info {
-    display: grid;
-    grid-template-areas:
-        "user-info-pic user-info-name user-info-name"
-        "user-info-pic user-info-account user-info-account"
-        "user-info-pic user-info-follow user-info-follower";
-    grid-template-columns: 100px 1fr 1fr;
-    grid-template-rows: 40px 20px auto;
-    column-gap: 1rem;
+.account-user-info {
+    display: flex;
+    align-items: center;
 }
-.user-info-pic {
-    grid-area: user-info-pic;
+.account-user-info-image {
+    margin-right: 10px;
 }
-.user-info-name {
-    grid-area: user-info-name;
-    align-self: end;
+.account-user-info-name {
     font-weight: bold;
 }
-.user-info-account {
-    grid-area: user-info-account;
-    align-self: start;
-    font-size: 0.85rem;
-    margin-top: 0.2rem;
+.account-user-info-account {
+    font-size: 0.8rem;
+    margin: 0.3rem 0 0.7rem 0;
 }
-.user-info-follow {
-    grid-area: user-info-follow;
-    margin-top: 0.2rem;
+.account-user-info-follow span {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 0.9rem;
 }
-.user-info-follower {
-    grid-area: user-info-follower;
-    margin-top: 0.2rem;
+.account-user-info-follow span em {
+    font-weight: bold;
 }
+
 
 /* account-menu */
 .account-menu {
     margin: 0 0.7rem;
 }
 .account-menu li {
-    margin: 2.1rem 0 0 1.4rem;
+    margin: 2.1rem 0 0 0;
 }
 
 /* stock-info */
@@ -491,14 +501,4 @@ textarea {
 }
 
 
-/* nav-top */
-.nav-top {
-    padding: 1rem ;
-    border-bottom: 1px solid #E2E2E2;
-}
-button.back {
-    border: 0;
-    width: 22px;
-    height: 22px;
-    background: url(../images/btn_back.svg) no-repeat;
-}
+

@@ -14,22 +14,30 @@
     </div>
     <section class="account blank-top">
         <h1>아이디, 비밀번호</h1>
-            <input type="text" name="id" id="id" class="block-input" value="아이디">
+            <input type="email" name="email" id="email" class="block-input" value="이메일">
             <span class="note">이메일을 입력해주세요.</span>
             <input type="password" name="id" id="id" class="block-input" value="비밀번호">
             <input type="password" name="id" id="id" class="block-input" value="비밀번호">
-            <span class="note">비밀번호가 일치하지 않습니다.</span>
+            <span class="note">비밀번호를 입력해주세요.</span>
+            <span class="note" style="display: none;">비밀번호가 일치하지 않습니다.</span>
 
             <h1>인증정보</h1>
             <input type="text" name="id" id="id" class="block-input" value="전화번호">
             <span class="note">인증번호를 발급받을 전화번호를 입력해주세요.</span>
             <button class="button-secondary">로그인</button>
             <input type="text" name="id" id="id" class="block-input" value="인증번호">
-            <span class="note">인증번호가 틀립니다. 인증번호를 재발급 받거나 다시 입력해주세요.</span>
+            <span class="note">발급받은 인증번호를 입력해주세요.</span>
+            <span class="note" style="display: none;">인증번호가 틀립니다. 인증번호를 재발급 받거나 다시 입력해주세요.</span>
 
             <h1>프로필</h1>
-            <input type="text" name="id" id="id" class="block-input" value="닉네임">
+            <input type="text" name="username" id="username" class="block-input" value="닉네임">
             <span class="note">Anttwits에서 사용할 닉네임을 입력해주세요.</span>
+            <input type="text" name="id" id="id" class="block-input" value="사용자 아이디">
+            <span class="note">Anttwits에서 사용할 아이디를 입력해주세요.</span>
+
+            <button class="btn-user-image"></button>
+            <span class="note center">프로필 사진을 선택해주세요.</span>
+
             <button class="button-primary" onclick="location.href='index.html'; return false;">가입하기</button>
     </section>
     <script src="js/scripts.js"></script>

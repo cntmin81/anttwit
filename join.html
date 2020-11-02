@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="nav-top">
-        <button class="back"></button>
+        <button class="back" onclick="window.history.back();"></button>
     </div>
     <section class="account blank-top">
         <h1>아이디, 비밀번호</h1>
@@ -30,7 +30,7 @@
             <h1>프로필</h1>
             <input type="text" name="id" id="id" class="block-input" value="닉네임">
             <span class="note">Anttwits에서 사용할 닉네임을 입력해주세요.</span>
-            <button class="button-primary">가입하기</button>
+            <button class="button-primary" onclick="location.href='index.html'; return false;">가입하기</button>
     </section>
     <script src="js/scripts.js"></script>
 </body>

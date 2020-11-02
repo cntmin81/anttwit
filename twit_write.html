@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="nav-top">
-        <button class="back"></button>
+        <button class="back" onclick="window.history.back();"></button>
     </div>
     <section class="user-info-writing blank-top">
         <div class="user-info-writing-img">
@@ -44,11 +44,11 @@
             <a href="sort">추천종목</a>
             <a href="sort">팔로우</a>
         </nav>
-        <form method="GET" action="search" class="menu-global">
-            <button class="btn-show-menu"></button>
-            <input type="text" id="keyword" name="keyword" class="search" value="검색어 입력">
-            <button class="write"></button>
-        </form>    
+        <form method="GET" class="menu-global">
+            <button class="btn-show-menu" onclick="location.href='menu_logout.html'; return false;"></button>
+            <input type="text" id="keyword" name="keyword" class="search" value="검색어 입력" onclick="location.href='search.html'">
+            <button class="write" onclick="location.href='twit_write.html'; return false;"></button>
+        </form>
     </div>
     <script src="js/scripts.js"></script>
 </body>

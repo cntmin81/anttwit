@@ -42,6 +42,9 @@ textarea {
 em {
     font-style: normal;
 }
+p {
+    margin: 0;
+}
 
 /* util */
 .a-text-button {
@@ -97,6 +100,16 @@ em {
 }
 .blank-top {
     margin-top: 60px !important;
+}
+.blank-bottom {
+    margin-bottom: 110px !important;
+}
+.block {
+    display: block;
+}
+.tag {
+    color: #00CB8C;
+    font-weight: normal;
 }
 
 /* global-menu */
@@ -216,6 +229,45 @@ button.back {
 .twit-article {
     margin-bottom: 0.3rem;
     line-height: 1.4em;
+}
+.twit-link,
+.twit-link-with-media {
+    margin: 0.7rem 0;
+}
+.twit-link {
+    display: flex;
+}
+.twit-link img {
+    display: block;
+    margin-right: 1rem;
+    width: 30px;
+    height: 30px;
+}
+.twit-link-text a,
+.twit-link-with-media a {
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: 1.2rem
+}
+.twit-link-text a:last-child {
+    font-size: 0.8rem;
+}
+.twit-link-with-media img {
+    width: 100%;
+    height: auto;
+}
+.movie-link {
+    position: relative;
+}
+.movie-link .icon_play_movie {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    width: auto;
 }
 .twit-tag {
     margin-bottom: 0.7rem;

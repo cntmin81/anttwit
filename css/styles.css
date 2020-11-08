@@ -110,6 +110,9 @@ p {
 .tag {
     color: #00CB8C;
     font-weight: normal;
+.center {
+    display: block;
+    text-align: center;
 }
 
 /* global-menu */
@@ -327,6 +330,14 @@ button.back {
 
 .join {
     margin: 0.7rem 1.4rem 1.4rem 1.4rem;
+}
+.btn-user-image {
+    display: block;
+    margin: 1.4rem auto 0.3rem auto;
+    border: 0;
+    width: 127px;
+    height: 127px;
+    background: url(../images/btn_user_img_add.svg) no-repeat;
 }
 .account-user-info {
     display: flex;

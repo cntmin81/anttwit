@@ -12,7 +12,12 @@
     <div class="nav-top">
         <button class="back" onclick="window.history.back();"></button>
     </div>
-    <section class="twits blank-top">
+    <section class="blank-top">
+        <form>
+            <input type="text" value="검색할 키워드를 입력합니다">
+        </form>
+    </section>
+    <section class="twits">
         <article class="twit">
             <div class="twit-user-image">
                 <img src="images/user_img_sample.png" alt="User image">
@@ -47,17 +52,13 @@
         </div>
     </section>
     <div class="floating-menu">        
-        <nav class="menu-sort">
-            <a href="sort">최신등록</a>
-            <a href="sort">관심종목</a>
-            <a href="sort">추천종목</a>
-            <a href="sort">팔로우</a>
+        <nav class="menu">
+            <button class="btn-twit-write" onclick="location.href='write.html'; return false;"></button>
+            <a href="index.html">홈</a>
+            <a href="search.html">검색</a>
+            <a href="#">알림<span class="notification-number">+10</span></a>
+            <a href="logout.html">설정</a>
         </nav>
-        <form method="GET" class="menu-global">
-            <button class="btn-show-menu" onclick="location.href='menu_logout.html'; return false;"></button>
-            <input type="text" id="keyword" name="keyword" class="search" value="검색어 입력" onclick="location.href='search.html'">
-            <button class="write" onclick="location.href='twit_write.html'; return false;"></button>
-        </form>   
     </div>
     <script src="js/scripts.js"></script>
 </body>

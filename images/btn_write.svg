@@ -1,5 +1,6 @@
-<svg id="btn_write_tweet" data-name="btn write tweet" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <circle id="타원_1" data-name="타원 1" cx="15" cy="15" r="15" fill="#00efa5"/>
-  <path id="Icon_open-pencil" data-name="Icon open-pencil" d="M11.11,0,9.258,1.852l3.7,3.7L14.813,3.7Zm-3.7,3.7L0,11.11v3.7H3.7L11.11,7.407Z" transform="translate(8 7.187)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_3" data-name="Group 3" transform="translate(-305 -574)">
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="24" cy="24" r="24" transform="translate(305 574)" fill="#00efa5"/>
+    <path id="Icon_open-pencil" data-name="Icon open-pencil" d="M18,0,15,3l6,6,3-3ZM12,6,0,18v6H6L18,12Z" transform="translate(317 586)" fill="#fff"/>
+  </g>
 </svg>
-

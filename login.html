@@ -12,7 +12,7 @@
     <div class="nav-top">
         <button class="back" onclick="window.history.back();"></button>
     </div>
-    <section class="account blank-top">
+    <section class="account blank-top blank-bottom">
         <h1>계정정보</h1>
         <div class="account-user-info">
             <div class="account-user-info-image">
@@ -34,6 +34,15 @@
             <li><a href="#">팔로워</a></li>
         </ul>
     </section>
+    <div class="floating-menu">        
+        <nav class="menu">
+            <button class="btn-twit-write" onclick="location.href='write.html'; return false;"></button>
+            <a href="index.html">홈</a>
+            <a href="search.html">검색</a>
+            <a href="#">알림<span class="notification-number">+10</span></a>
+            <a href="logout.html">설정</a>
+        </nav>
+    </div>
     <script src="js/scripts.js"></script>
 </body>
 </html>

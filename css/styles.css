@@ -119,6 +119,14 @@ p {
     display: block;
     text-align: center;
 }
+.block-center {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.margin-section {
+    margin: 0.7rem 1.4rem 0 1.4rem;
+}
 
 /* global-menu */
 .floating-menu {

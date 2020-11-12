@@ -1,8 +1,9 @@
 /* reset */
 html {
-    color: #707070;
+    
 }
 body {
+    color: #1d1d1d;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -122,6 +123,9 @@ p {
 .center {
     display: block;
     text-align: center;
+}
+.right {
+    text-align: right;
 }
 .block-center {
     display: block;
@@ -642,32 +646,32 @@ button.back {
     margin-bottom: 0.7rem;
     align-items: center;
 }
-.trend-rank {
+.trend > .rank {
     flex-basis: 1rem;
     color: #1d1d1d;
     font-weight: bolder;
 }
-.trend-name {
+.trend > .name {
     margin-left: 0.3rem;
     flex-grow: 1;
     color: #1d1d1d;
 }
-.trend-price {
+.trend > .price {
     margin-left: 1rem;
     color: #1d1d1d;
     font-weight: bold;
 }
-.trend-percent {
+.percent {
     margin-left: 0.7rem;
     flex-basis: 4.5rem;
 }
-.trend-percent.plus {
+.percent.plus {
     color: #D51A45;
 }
-.trend-percent.minus {
+.percent.minus {
     color: #179CEF;
 }
-.trend-opinion {
+.opinion {
     margin-left: 0;
     border-radius: 4px;
     border: 0;
@@ -675,14 +679,50 @@ button.back {
     font-size: 0.8rem;
     padding: 0.3rem;
 }
-.trend-opinion.neutral {
+.opinion.neutral {
     background-color: #00CB8C;
 }
-.trend-opinion.sell {
+.opinion.sell {
     background-color: #179CEF;
 }
-.trend-opinion.buy {
+.opinion.buy {
     background-color: #D51A45;
+}
+
+/* favorite */
+.favorite {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+.favorite > .name {
+    flex-grow: 1;
+}
+.favorite > .name > .code {
+    display: block;
+    color: #A2A2A2;
+    font-size: 0.8rem;
+}
+.favorite > .price {
+    font-weight: bold;
+}
+.favorite > .price > .diff {
+    display: block;
+    text-align: right;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+.favorite > .price > .diff.minus {
+    color: #179CEF;
+}
+.favorite > .price > .diff.minus::before {
+    content: "-";
+}
+.favorite > .price > .diff.plus {
+    color: #D51A45
+}
+.favorite > .price > .diff.plus::before {
+    content: "+";
 }
 
 

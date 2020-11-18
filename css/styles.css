@@ -57,7 +57,7 @@ header h1 {
     margin: 1rem 0 -0.7rem 0;
 }
 select {
-    appearance: none;
+    /* appearance: none;
     line-height: normal;
     position: relative;
     background-image: url(../images/icon_down.svg);
@@ -67,7 +67,7 @@ select {
     padding: 0.15rem;
     font-size: 0.85rem;
     width: 6rem;
-    border-radius: 3px;
+    border-radius: 3px; */
 }
 section > h1 {
     margin: 1.4rem 0 0.7rem 0;

@@ -705,7 +705,7 @@ button.back {
     border: 0;
     color: #fff;
     font-size: 0.8rem;
-    padding: 0.3rem 0.3rem 0.2rem 0.3rem;
+    padding: 0.3rem;
 }
 .opinion.neutral {
     background-color: #00CB8C;

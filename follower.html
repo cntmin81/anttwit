@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Anttwit</title>
+    <meta name="description" content="Twit for ants">
+    <meta name="author" content="Anttwit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+    <div class="nav-top">
+        <button class="back" onclick="window.history.back();"></button>
+    </div>
+    <section class="account blank-top blank-bottom">
+        <h1>팔로워</h1>
+        <p>나를 팔로우하는 사람들의 목록입니다</p>
+        <div class="account-follow-info">
+            <div class="account-follow-info-image">
+                <img src="images/user_img_large_sample.png" width="60">
+            </div>
+            <div class="account-user-info-text">
+                <div class="account-user-info-name">사용자이름</div>
+                <div class="account-follow-info-account">@account_name</div>
+                <div class="account-user-info-follow">
+                    <span><em>100</em> 팔로우</span>
+                    <span><em>100</em> 팔로워</span>
+                </div>
+            </div>
+            <button class="button-alert-primary-inline">차단</button>
+        </div>
+        <div class="account-follow-info">
+            <div class="account-follow-info-image">
+                <img src="images/user_img_large_sample.png" width="60">
+            </div>
+            <div class="account-user-info-text">
+                <div class="account-user-info-name">사용자이름</div>
+                <div class="account-follow-info-account">@account_name</div>
+                <div class="account-user-info-follow">
+                    <span><em>100</em> 팔로우</span>
+                    <span><em>100</em> 팔로워</span>
+                </div>
+            </div>
+            <button class="button-alert-primary-inline">차단</button>
+        </div>
+        <div class="account-follow-info">
+            <div class="account-follow-info-image">
+                <img src="images/user_img_large_sample.png" width="60">
+            </div>
+            <div class="account-user-info-text">
+                <div class="account-user-info-name">사용자이름</div>
+                <div class="account-follow-info-account">@account_name</div>
+                <div class="account-user-info-follow">
+                    <span><em>100</em> 팔로우</span>
+                    <span><em>100</em> 팔로워</span>
+                </div>
+            </div>
+            <button class="button-alert-secondary-inline">차단해제</button>
+        </div>
+    </section>
+    <div class="floating-menu">        
+        <nav class="menu">
+            <button class="btn-twit-write" onclick="location.href='write.html'; return false;"></button>
+            <a href="index.html">홈</a>
+            <a href="search.html">검색</a>
+            <a href="#">알림<span class="notification-number">+10</span></a>
+            <a href="logout.html">설정</a>
+        </nav>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

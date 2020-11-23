@@ -314,6 +314,7 @@ button.back {
     margin-bottom: 0.3rem;
     line-height: 1.4em;
     font-size: 0.95rem;
+    color: #555555;
 }
 .twit-link,
 .twit-link-with-media {

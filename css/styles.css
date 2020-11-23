@@ -130,6 +130,7 @@ section > h1 {
 }
 
 .blank-top {
+    margin: 2.1rem 1.4rem 0 1.4rem;
     margin-top: 60px !important;
 }
 .blank-bottom {
@@ -155,7 +156,7 @@ section > h1 {
     margin: 0 auto;
 }
 .margin-section {
-    margin: 0.7rem 1.4rem 0 1.4rem;
+    margin: 0.7rem 1.4rem 2.1rem 1.4rem;
 }
 
 /* global-menu */
@@ -215,14 +216,14 @@ section > h1 {
     margin-right: 10px;
     margin-left: 6px;
 }
-.search {
+.search input {
     border: 1px solid #00EFA5;
     border-radius: 15px;
     height: 30px;
     box-sizing: border-box;
-    flex-grow: 1;
     padding: 0 1rem;
     color: #a2a2a2;
+    width: 100%;
 }
 .write {
     border: 0;

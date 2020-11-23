@@ -274,6 +274,9 @@ button.back {
 .twit {
     display: flex;
 }
+.twit.reply, .news.reply {
+    margin-left: 0.7rem;
+}
 .twit-user-image {
     flex-basis: 45px;
     margin-right: 10px;

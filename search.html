@@ -12,71 +12,131 @@
     <div class="nav-top">
         <button class="back" onclick="window.history.back();"></button>
     </div>
-    <section class="blank-top">
-        <form class="search">
-            <input type="text" value="검색할 키워드를 입력합니다">
-        </form>
-    </section>
-    <section class="twits">
-        <article class="twit">
-            <div class="twit-user-image">
-                <img src="images/user_img_sample.png" alt="User image">
-            </div>
-            <div class="twit-contents">
-                <div class="twit-title">
-                    <span class="twit-user-name">사용자이름<span class="twit-user-account-name">@account_name</span></span>
-                    <span class="twit-time">4시간전</span>
-                    <button class="twit-menu-button"></button>
-                </div>
-                <div class="twit-article">
-                    물적 분할 논란에 휩싸인 LG화학 주가가 오전 중 5%대 하락 중이다. 21일 오전 10시 36분 기준 LG화학 주가는 전거래일 대비 3만7000원, 내린 62만9000원에 거래되고 있다.
-                </div>
-                <ul class="twit-tag">
-                    <li><div class="opinion neutral">관망</div></li>
-                    <li>$LG화학</li>
-                    <li>#태그4</li>
-                    <li>#태그5</li>
-                </ul>
-                <div class="twit-btns">
-                    <button class="twit-btn-like btn-off"></button>
-                    <button class="twit-btn-mail btn-off"></button>
-                    <button class="twit-btn-retwit btn-off"></button>
-                    <button class="twit-btn-comment btn-off"></button>
-                    <button class="twit-btn-report btn-off"></button>
-                </div>    
-            </div>
-        </article>
-        <article class="twit">
-            <div class="twit-user-image">
-                <img src="images/user_img_sample.png" alt="User image">
-            </div>
-            <div class="twit-contents">
-                <div class="twit-title">
-                    <span class="twit-user-name">사용자이름<span class="twit-user-account-name">@account_name</span></span>
-                    <span class="twit-time">4시간전</span>
-                    <button class="twit-menu-button"></button>
-                </div>
-                <div class="twit-article">
-                    물적 분할 논란에 휩싸인 LG화학 주가가 오전 중 5%대 하락 중이다. 21일 오전 10시 36분 기준 LG화학 주가는 전거래일 대비 3만7000원, 내린 62만9000원에 거래되고 있다.
-                </div>
-                <ul class="twit-tag">
-                    <li><div class="opinion neutral">관망</div></li>
-                    <li>$LG화학</li>
-                    <li>#태그4</li>
-                    <li>#태그5</li>
-                </ul>
-                <div class="twit-btns">
-                    <button class="twit-btn-like btn-off"></button>
-                    <button class="twit-btn-mail btn-off"></button>
-                    <button class="twit-btn-retwit btn-off"></button>
-                    <button class="twit-btn-comment btn-off"></button>
-                    <button class="twit-btn-report btn-off"></button>
-                </div>    
-            </div>
-        </article>
-        <div class="no-result">
-            더 이상 검색 결과가 없습니다
-        </div>
+    <section class="blank-top blank-bottom">
+        <input class="search" type="text" placeholder="검색어를 입력하세요">
+        <ul class="stock-item">
+            <li>
+                <div class="name">삼성전자<span class="code">005930</span></div>
+                <div class="price">69,500<span class="diff plus">1700</span></div>
+                <div class="percent plus">+2.51%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성중공업<span class="code">010140</span></div>
+                <div class="price">6,880<span class="diff minus">60</span></div>
+                <div class="percent minus">-0.86%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성엔지니어링<span class="code">028050</span></div>
+                <div class="price">13,800<span class="diff minus">50</span></div>
+                <div class="percent minus">-0.36%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성전자1우<span class="code">005935</span></div>
+                <div class="price">63,800<span class="diff plus">1300</span></div>
+                <div class="percent plus">+2.08%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성생명보험<span class="code">032830</span></div>
+                <div class="price">73,500<span class="diff plus">1000</span></div>
+                <div class="percent plus">+1.38%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+
+            <li>
+                <div class="name">삼성전자<span class="code">005930</span></div>
+                <div class="price">69,500<span class="diff plus">1700</span></div>
+                <div class="percent plus">+2.51%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성중공업<span class="code">010140</span></div>
+                <div class="price">6,880<span class="diff minus">60</span></div>
+                <div class="percent minus">-0.86%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성엔지니어링<span class="code">028050</span></div>
+                <div class="price">13,800<span class="diff minus">50</span></div>
+                <div class="percent minus">-0.36%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성전자1우<span class="code">005935</span></div>
+                <div class="price">63,800<span class="diff plus">1300</span></div>
+                <div class="percent plus">+2.08%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성생명보험<span class="code">032830</span></div>
+                <div class="price">73,500<span class="diff plus">1000</span></div>
+                <div class="percent plus">+1.38%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성전자<span class="code">005930</span></div>
+                <div class="price">69,500<span class="diff plus">1700</span></div>
+                <div class="percent plus">+2.51%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성중공업<span class="code">010140</span></div>
+                <div class="price">6,880<span class="diff minus">60</span></div>
+                <div class="percent minus">-0.86%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성엔지니어링<span class="code">028050</span></div>
+                <div class="price">13,800<span class="diff minus">50</span></div>
+                <div class="percent minus">-0.36%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성전자1우<span class="code">005935</span></div>
+                <div class="price">63,800<span class="diff plus">1300</span></div>
+                <div class="percent plus">+2.08%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성생명보험<span class="code">032830</span></div>
+                <div class="price">73,500<span class="diff plus">1000</span></div>
+                <div class="percent plus">+1.38%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성전자<span class="code">005930</span></div>
+                <div class="price">69,500<span class="diff plus">1700</span></div>
+                <div class="percent plus">+2.51%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성중공업<span class="code">010140</span></div>
+                <div class="price">6,880<span class="diff minus">60</span></div>
+                <div class="percent minus">-0.86%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성엔지니어링<span class="code">028050</span></div>
+                <div class="price">13,800<span class="diff minus">50</span></div>
+                <div class="percent minus">-0.36%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성전자1우<span class="code">005935</span></div>
+                <div class="price">63,800<span class="diff plus">1300</span></div>
+                <div class="percent plus">+2.08%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+            <li>
+                <div class="name">삼성생명보험<span class="code">032830</span></div>
+                <div class="price">73,500<span class="diff plus">1000</span></div>
+                <div class="percent plus">+1.38%</div>
+                <div class="button-primary-inline">추가</div>
+            </li>
+        </ul>
     </section>
     <div class="floating-menu">        
         <nav class="menu">

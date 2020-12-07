@@ -69,8 +69,9 @@ select {
     width: 6rem;
     border: 0;
 }
-section > h1 {
+section h1 {
     margin: 2.1rem 0 1.4rem 0;
+    font-weight: normal;
 }
 
 /* util */
@@ -184,6 +185,9 @@ section > h1 {
 }
 .margin-section {
     margin: 0.7rem 1.4rem 2.1rem 1.4rem;
+}
+.scroll {
+    overflow: scroll;
 }
 
 /* global-menu */
@@ -721,10 +725,18 @@ button.back {
 }
 
 /* 트렌드 */
-.trend li {
+.trend {
     display: flex;
+    flex-wrap: nowrap;
+}
+.trend li {
+    flex-basis: 5rem;
+    flex-shrink: 0;
     margin-bottom: 0.7rem;
     align-items: center;
+    padding: 0.7rem;
+    border: #eee 1px solid;
+    margin-right: 0.7rem;
 }
 .trend .rank {
     flex-basis: 1rem;
@@ -732,14 +744,20 @@ button.back {
     font-weight: bolder;
 }
 .trend .name {
-    margin-left: 0.3rem;
-    flex-grow: 1;
+    width: 5rem;
     color: #1d1d1d;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.trend .code {
+    color: #A2A2A2;
+    font-size: 0.8rem;
 }
 .trend .price {
-    margin-left: 1rem;
+    margin-top: 0.4rem;
     color: #1d1d1d;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .percent {
     margin-left: 0.7rem;
@@ -751,6 +769,12 @@ button.back {
 .percent.minus {
     color: #179CEF;
 }
+.trend .percent {
+    margin-left: 0;
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+}
+
 .opinion {
     margin-left: 0;
     border-radius: 4px;

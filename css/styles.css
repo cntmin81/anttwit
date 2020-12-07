@@ -352,6 +352,15 @@ button.back {
     font-size: 0.95rem;
     color: #555555;
 }
+
+.twit-article.shrink{
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+
 .twit-link,
 .twit-link-with-media {
     margin: 0.7rem 0;

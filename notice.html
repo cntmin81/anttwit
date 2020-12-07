@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Anttwit</title>
+    <meta name="description" content="Twit for ants">
+    <meta name="author" content="Anttwit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+    <div class="nav-top">
+        <button class="back" onclick="window.history.back();"></button>
+    </div>
+    <section class="twits blank-top blank-bottom">
+        <h1>알림</h1>
+        <article class="twit">
+            <div class="twit-user-image">
+                <img src="images/user_img_sample.png" alt="User image">
+            </div>
+            <div class="twit-contents">
+                <div class="twit-title">
+                    <span class="twit-user-name"><a href="user_detail.html">사용자이름</a> 님이 트윗함</span>
+                    <span class="twit-time">10분전</span>
+                </div>
+                <div class="twit-article shrink">
+                    물적 분할 논란에 휩싸인 <a href="twit_detail.html" class="tag">$LG화학</a> 주가가 오전 중 5%대 하락 중이다. 21일 오전 10시 36분 기준 LG화학 주가는 전거래일 대비 3만7000원, 내린 62만9000원에 거래되고 있다.
+                </div>
+            </div>
+        </article>
+        <article class="twit">
+            <div class="twit-user-image">
+                <img src="images/user_img_sample.png" alt="User image">
+            </div>
+            <div class="twit-contents">
+                <div class="twit-title">
+                    <span class="twit-user-name"><a href="user_detail.html">사용자이름</a> 님이 트윗함</span>
+                    <span class="twit-time">오늘 오후 1시</span>
+                </div>
+                <div class="twit-article shrink">
+                    물적 분할 논란에 휩싸인 <a href="twit_detail.html" class="tag">$LG화학</a> 주가가 오전 중 5%대 하락 중이다. 21일 오전 10시 36분 기준 LG화학 주가는 전거래일 대비 3만7000원, 내린 62만9000원에 거래되고 있다.
+                </div>
+            </div>
+        </article>
+        <article class="twit">
+            <div class="twit-user-image">
+                <img src="images/user_img_sample.png" alt="User image">
+            </div>
+            <div class="twit-contents">
+                <div class="twit-title">
+                    <span class="twit-user-name"><a href="user_detail.html">사용자이름</a> 님이 트윗함</span>
+                    <span class="twit-time">어제 오후 10시</span>
+                </div>
+                <div class="twit-article shrink">
+                    사진을 트윗했습니다. alt태그 내용을 출력 없으면 파일이름을 출력
+                </div>
+            </div>
+        </article>
+        <article class="twit">
+            <div class="twit-user-image">
+                <img src="images/user_img_sample.png" alt="User image">
+            </div>
+            <div class="twit-contents">
+                <div class="twit-title">
+                    <span class="twit-user-name"><a href="user_detail.html">사용자이름</a> 님이 트윗함</span>
+                    <span class="twit-time">어제 오후 1시</span>
+                </div>
+                <div class="twit-article shrink">
+                    동영상을 트윗했습니다. alt태그 내용을 출력 없으면 파일이름을 출력
+                </div>
+            </div>
+        </article>
+    </section>
+    <div class="floating-menu">        
+        <nav class="menu">
+            <button class="btn-twit-write" onclick="location.href='write.html'; return false;"></button>
+            <a href="index.html">홈</a>
+            <a href="search.html">검색</a>
+            <a href="#">알림<span class="notification-number">+10</span></a>
+            <a href="logout.html">설정</a>
+        </nav>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

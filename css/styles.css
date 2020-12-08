@@ -857,6 +857,24 @@ display: -webkit-box;
     content: "+";
 }
 
+/* password */
+div.password {
+    margin-top: 1.4rem;
+}
+div.password input {
+    box-sizing: border-box;
+    display: block;
+    padding: 0.6rem 0.4rem;
+    border: #ccc 1px solid;
+    width: 100%;
+}
+input.current-pass {
+    margin-bottom: 0.7rem;
+}
+input.new-pass-confirm {
+    border-top: 0 !important;
+}
+
 /* 800px이상 */
 @media all and (min-width: 800px) { 
     body > section {

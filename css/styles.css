@@ -147,6 +147,9 @@ section h1 {
     font-size: 0.8rem;
     font-weight: bold;
 }
+.button-inline-space {
+    margin-left: 0.4rem;
+}
 .note {
     color: #a2a2a2;
     font-size: 0.8rem;
@@ -457,7 +460,9 @@ display: -webkit-box;
     font-size: 0.7rem;
     color: #1d1d1d;
 }
-
+.account h1+p{
+    margin-bottom: 1.4rem;
+}
 
 .join {
     margin: 0.7rem 1.4rem 1.4rem 1.4rem;

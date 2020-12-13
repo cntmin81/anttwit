@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Anttwit</title>
+    <meta name="description" content="Twit for ants">
+    <meta name="author" content="Anttwit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+    <div class="nav-top">
+        <button class="back" onclick="window.history.back();"></button>
+    </div>
+    <section class="account blank-top blank-bottom">
+        <h1>회원정보 변경</h1>
+            <p>닉네임과 아이디, 프로필 사진을 변경할 수 있습니다.</p>
+            <input type="text" name="username" id="username" class="block-input" placeholder="antuser">
+            <input type="text" name="id" id="id" class="block-input" placeholder="antID">
+            <div class="account-user-pic">
+                <img src="images/user_img_large_sample.png">
+            </div>
+            <span class="note center">프로필 사진을 선택해주세요.</span>
+            <button class="button-primary" onclick="location.href='index.html'; return false;">적용</button>
+    </section>
+    <div class="floating-menu">        
+        <nav class="menu">
+            <button class="btn-twit-write" onclick="location.href='write.html'; return false;"></button>
+            <a href="index.html">홈</a>
+            <a href="search.html">검색</a>
+            <a href="#">알림<span class="notification-number">+10</span></a>
+            <a href="logout.html">설정</a>
+        </nav>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

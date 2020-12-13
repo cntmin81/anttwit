@@ -875,6 +875,11 @@ input.new-pass-confirm {
     border-top: 0 !important;
 }
 
+.account-user-pic {
+    margin: 1.4rem 0 0.4rem 0;
+    text-align: center;
+}
+
 /* 800px이상 */
 @media all and (min-width: 800px) { 
     body > section {
